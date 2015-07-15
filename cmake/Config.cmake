@@ -22,6 +22,10 @@ elseif(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
         set(SFML_OS_ANDROID 1)
         # use the OpenGL ES implementation on Android
         set(OPENGL_ES 1)
+    elseif(${RPI_VER})
+        set(SFML_OS_LINUX 1)
+        set(SFML_OS_RPI 1)
+        set(OPENGL_ES 1)
     else()
         set(SFML_OS_LINUX 1)
         # don't use the OpenGL ES implementation on Linux

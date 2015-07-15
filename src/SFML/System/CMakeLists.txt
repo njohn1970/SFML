@@ -85,7 +85,7 @@ endif()
 
 # build the list of external libraries to link
 if(SFML_OS_LINUX OR SFML_OS_FREEBSD OR SFML_OS_MACOSX)
-    list(APPEND SYSTEM_EXT_LIBS pthread)
+    #list(APPEND SYSTEM_EXT_LIBS pthread)
 endif()
 if(SFML_OS_LINUX)
     list(APPEND SYSTEM_EXT_LIBS rt)
